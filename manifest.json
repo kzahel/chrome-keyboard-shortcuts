@@ -1,0 +1,24 @@
+{
+  "name":"keyboard shortcuts",
+  "manifest_version": 2,
+  "version":"0.0.1",
+  "commands": {
+	  "next_tab": {
+	    "suggested_key": {
+		    "chromeos": "Alt+Shift+0"
+	    },
+	    "description": "Next Tab"
+	  },
+	  "prev_tab": {
+	    "suggested_key": {
+		    "chromeos": "Alt+Shift+9"
+	    },
+	    "description": "Prev Tab"
+	  }
+  },
+  "permissions":["tabs"],
+  "background": {
+	  "scripts": ["chromise.js","background.js"],
+	  "persistent": false
+  }
+}
